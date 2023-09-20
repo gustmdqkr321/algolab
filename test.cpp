@@ -6,5 +6,5 @@
 using namespace std;
 // 1158;
 int main() {
-    cout << "first";
+    cout << "test";
     }
