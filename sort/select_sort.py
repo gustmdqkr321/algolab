@@ -3,6 +3,7 @@
 def selection_sort(arr):
     comp = 0
     swap = 0
+    n = len(arr)
     for i in range(0,n): # 가장 작은 값을 고르는 것은 배열의 크기 만큼 해야함
         index = i # 최솟값의 인덱스
         for j in range(i+1,n):
