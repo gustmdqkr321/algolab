@@ -2,23 +2,12 @@
 using namespace std;
 
 
-void swap(char* arr, int i, int j){  // 스왑
-  char tmp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = tmp;
-}
+// void swap(char* arr, int i, int j){  // 스왑
+//   char tmp = arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = tmp;
+// }
 
-void reverse_str(char s[], int first, int last){ // 맨앞과 맨 뒤를 바꾸는 것부터 시작
-    if(first < last)
-    {
-        swap(s,first,last);
-        reverse_str(s, first+1, last-1); // 비교하는 문자를 하나씩 당겨옴
-    }
-    else // 비교하는 문자가 같아지거나 한칸 떨어진 문자를 비교한 다음 단계에서 앞 뒤가 바뀌는 경우
-    {
-        return;
-    }
-}
 
 int main(){
     int t;
