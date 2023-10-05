@@ -14,6 +14,7 @@ void ord(char* arr, int len) // 가중치 양수 음수 판별
     int w = 0; // 가중치
     for(int i=0; i<len; i++) // 문자열의 처음부터 마지막까지
     {
+        
         if(i%2 == 0) // +부터 시작 처음걸 0번쨰로 계산
         {
             w = w + (int(arr[i]) - int('a')); // char to int는 그냥 가능
