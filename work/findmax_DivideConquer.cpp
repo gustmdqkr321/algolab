@@ -33,7 +33,7 @@ int main(){
         {
             cin >> arr[j];
         }
-        cout << findmax(arr,0,n-1) << endl; // n은 정수의 개수고 인덱스는 0부터라 n-1로해야함
+        cout << findmax(arr,0,n-1) << endl; // n은 정수의 개수고 인덱스는 0부터라 n-1임
     }
 
 
