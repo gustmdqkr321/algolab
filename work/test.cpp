@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     int t;
-    cin >> t; //테스트 케이스 개수 입력 
+    cin >> t; //테스트 케이스 개수 입력
     int n;
     for (int i=0; i<t; i++)
     {
