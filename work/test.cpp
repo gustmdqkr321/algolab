@@ -1,55 +1,18 @@
 #include <iostream>
 using namespace std;
 
-
-// void swap(char* arr, int i, int j){  // 스왑
-//   char tmp = arr[i];
-//   arr[i] = arr[j];
-//   arr[j] = tmp;
-// }
-
-
 int main(){
     int t;
     cin >> t; //테스트 케이스 개수 입력 
     int n;
-    char string[27];
     for (int i=0; i<t; i++)
     {
-        cin >> n >> string;
-        int size = n;
-        int swap_index = size;
-        int min_index = size;
-        for(int j = size; j>0; j--)
+        cin >> n;
+        int arr[101];
+        for(int j=0; j<n; j++)
         {
-            if(string[j] > string[j-1])
-            {
-                swap_index = j-1;
-                break;
-            }
-        }
-        for(int z = size; z>swap_index; z--)
-        {
-            if(string[z] > string[swap_index])
-            {
-                min_index = z;
-                break;
-            }
-        }
-        if(swap_index == size)
-        {
-            reverse_str(string,0,size-1);
-        }
-        else
-        {
-            swap(string, swap_index, min_index);
-            reverse_str(string, swap_index+1, size-1);
-        }
-        for(int x = 0; x<size; x++)
-        {
-            cout << string[x];
-        }
-        cout << endl;
+            cin >> arr[j];
+        } 
     }
 
 
