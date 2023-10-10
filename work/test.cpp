@@ -13,7 +13,7 @@ int main(){
         {
             cin >> arr[j];
         } 
-    }
+    } // test
 
 
 	return 0;
