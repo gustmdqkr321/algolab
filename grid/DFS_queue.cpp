@@ -8,7 +8,7 @@ const int MAX_N = 1001;
 int adj_list[MAX_N][MAX_N];
 bool visited[MAX_N];
 
-void bfs(int start, int n, int component[], int& component_size) {
+void dfs(int start, int n, int component[], int& component_size) {
     queue<int> q;
     q.push(start);
     visited[start] = true;
@@ -72,7 +72,7 @@ int main() {
             if (!visited[i]) {
                 int component[MAX_N] = {0};
                 int component_size = 0;
-                bfs(i, n, component, component_size);
+                dfs(i, n, component, component_size);
                 connected_component_sizes[component_count++] = component_size;
             }
         }
